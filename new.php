@@ -1,6 +1,5 @@
 <?php
-	//echo "<pre>";
-	//E_NOTICE();
+	
 	$file1 = fopen('awards.csv', 'r') or die("Unable to open file");
     $file2 = fopen('contracts.csv', 'r') or die("Unable to open file");
 
@@ -42,7 +41,7 @@
 	foreach ($line as $fields) {
 	    fputcsv($file3, $fields);
 	}
-	echo "The total of current awardee is : ". $total;
+	echo "Total Amount of current contracts: ". $total;
 
     fclose($file1);
     fclose($file2);
